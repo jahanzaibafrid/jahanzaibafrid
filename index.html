@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>dynamic resume builder by jahanzaib</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text"id="name"name="name"required> <br><br>
+            <label for="email">Email:</label><br>
+            <input type=" email"id="email"name="email"required> <br><br>       
+             <label for="phone no">Phone:</label><br>
+            <input type="tel"id="phone "name="phone"required>
+            
+
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label> <br>
+           <textarea name="education" id="education" rows="5"required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Exprience</legend>
+            <label for="Exprience">Exprience</label> <br>
+           <textarea name="Exprience" id="Exprience " rows="5"required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">skills</label> <br>
+           <textarea name="skills" id="skills" rows="5"required></textarea>
+        </fieldset> <br>
+        <button type="submit">generate resume below</button>
+    </form>
+    <div id="resumeOutput">
+<!-- resume will be generateD below -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
